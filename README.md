@@ -25,6 +25,12 @@ usermod -aG sudo <username>
 ```
 
 5. Create a ssh folder on the newly created user's directory
+
+If the folder is not automatically created, just create one:
+```
+mkdir /home/<username>
+```
+
 ```
 cd /home/<username>
 mkdir .ssh
@@ -48,8 +54,8 @@ chmod 600 authorized_keys
 
 9. Change ownership of .ssh dir and its contents for the new user
 ```
-cd /home/<username>
-chown -R <username>:<username> .ssh
+cd /home
+chown -R <username>:<username> <username>
 ```
 
 10. Check that .ssh folder and its contents are owned by the new user and on proper access permissions
