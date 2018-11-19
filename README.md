@@ -48,6 +48,7 @@ chmod 600 authorized_keys
 
 9. Change ownership of .ssh dir and its contents for the new user
 ```
+cd /home/<username>
 chown -R <username>:<username> .ssh
 ```
 
@@ -58,6 +59,6 @@ ls -al
 
 11. On the new user's local machine, try to connect to the development server with:
 ```
-ssh <server_ip>
+ssh <username>@<server_ip>
 ```
 
