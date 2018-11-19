@@ -26,7 +26,7 @@ usermod -aG sudo <username>
 
 5. Create a ssh folder on the newly created user's directory
 
-If the folder is not automatically created, just create one:
+     If the folder is not automatically created, just create one:
 ```
 mkdir /home/<username>
 ```
